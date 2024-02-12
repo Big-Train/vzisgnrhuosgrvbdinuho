@@ -1,0 +1,22 @@
+﻿<Window x:Class="vzisgnrhuosgrvbdinuho.KsiazkaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vzisgnrhuosgrvbdinuho"
+        mc:Ignorable="d"
+        Title="KsiazkaWindow" Height="250" Width="300">
+    <Grid>
+        <StackPanel Grid.Column="0" Background="AliceBlue">
+            <Label>Nazwa:</Label>
+            <TextBox x:Name="Nazwa" Text="{Binding Path=Nazwa}"/>
+            <Label>Autor:</Label>
+            <TextBox x:Name="Autor" Text="{Binding Path=Autor}"/>
+            <Label>Klasa:</Label>
+            <ComboBox x:Name="Klasaw" Text="{Binding Klasa}">
+            </ComboBox>
+            <Button x:Name="btnOK" IsDefault="True" Click="btnOK_Click" Margin="0,20,0,0">0k</Button>
+            <Button x:Name="btnCancel" IsCancel ="True" >Anuluj</Button>
+        </StackPanel>
+    </Grid>
+</Window>
